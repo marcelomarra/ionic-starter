@@ -1,15 +1,41 @@
-node_modules
-www
-.idea
-.temp
-.sass-cache
-app/bower_components
-coverage
-platforms
-plugins
-*.swp
-*.swo
-*.log
-*.DS_Store
+# http://git-scm.com/docs/gitignore
 
-app/scripts/configuration.js
+#Common Ignores
+.vscode/
+.idea
+.iml
+.DS_Store
+
+#ionic
+node_modules/
+plugins/
+
+#Platform iOS
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+platforms/ios/build
+platforms/ios/cordova
+platforms/ios/CordovaLib
+platforms/ios/platform_www
+
+#Platform Android
+platforms/android/build.xml
+platforms/android/local.properties
+#platforms/android/gradlew
+platforms/android/gradlew.bat
+#platforms/android/gradle
+platforms/android/assets/www
+platforms/android/cordova
+platforms/android/CordovaLib
+platforms/android/platform_www
+
+#Ant builds
+platforms/android/ant-build
+platforms/android/ant-gen
+
+#Eclipse builds
+platforms/android/gen
+platforms/android/out
+
+#Gradle builds
